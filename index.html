@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Animated Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2 class="logo">AARUSH ROY</h2>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="reveal">
+        <h1 class="glow-text">Hi, I'm <span>AARUSH ROY</span></h1>
+        <p class="subtitle">Front-End Developer | Designer | Creator</p>
+        <a href="#projects" class="btn neon-btn">Explore My Work</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section reveal">
+        <h2 class="section-title">About Me</h2>
+        <p>
+            I’m a passionate web developer who loves building animated, modern, and interactive web experiences.
+            I enjoy mixing creativity and code to make visually stunning and smooth-performing websites.
+        </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section reveal">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-container">
+
+            <div class="project-card glow-card reveal">
+                <h3>project one</h3>
+                <p>A cool interactive website with animations and a modern UI.</p>
+                <a href="https://aarushroy2007.github.io/ethics/" class="project-btn">Live Demo</a>
+                <a href="https://github.com/Aarushroy2007/ethics" class="project-btn">GitHub</a>
+            </div>
+
+            <div class="project-card glow-card reveal">
+                <h3>Project Two</h3>
+                <p>A creative landing page with smooth transitions and effects.</p>
+                <a href="https://aarushroy2007.github.io/ethics.-final/" class="project-btn">Live Demo</a>
+                <a href="https://github.com/Aarushroy2007/ethics.-final" class="project-btn">GitHub</a>
+            </div>
+
+            <div class="project-card glow-card reveal">
+                <h3>Project Three</h3>
+                <p>A responsive portfolio built with neon aesthetics.</p>
+                <a href="https://aarushroy2007.github.io/learning-html-/" class="project-btn">Live Demo</a>
+                <a href="https://github.com/Aarushroy2007/learning-html-" class="project-btn">GitHub</a>
+            </div>
+
+            <div class="project-card glow-card reveal">
+                <h3>Project Three</h3>
+                <p>A responsive portfolio built with neon aesthetics.</p>
+                <a href="#" class="project-btn">Live Demo</a>
+                <a href="#" class="project-btn">GitHub</a>
+            </div>
+
+            <div class="project-card glow-card reveal">
+                <h3>Project Three</h3>
+                <p>A responsive portfolio built with neon aesthetics.</p>
+                <a href="#" class="project-btn">Live Demo</a>
+                <a href="#" class="project-btn">GitHub</a>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section reveal">
+        <h2 class="section-title">Contact Me</h2>
+        <p>Email: 25051130@kiit.ac.in</p>
+        <p>GitHub: <github class="com">
+        <Aarushroy2007>Aarushroy2007</Aarushroy2007></p>
+        <p>LinkedIn: linkedin.com/in/yourusername</p>
+    </section>
+
+
+
+    <!-- Scroll Reveal Script -->
+    <script>
+        function revealElements() {
+            const elements = document.querySelectorAll(".reveal");
+            elements.forEach(el => {
+                const elementTop = el.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (elementTop < windowHeight - 120) {
+                    el.classList.add("active");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", revealElements);
+        revealElements();
+    </script>
+
+</body>
+</html>

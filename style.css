@@ -1,0 +1,180 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #fff;
+    background: linear-gradient(135deg, #0a0f24, #111a3b, #0f0f0f);
+    background-size: 300% 300%;
+    animation: bgMove 12s infinite alternate;
+}
+
+/* Background animation */
+@keyframes bgMove {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Navbar */
+nav {
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav .logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #00d9ff;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00d9ff;
+}
+
+/* HERO */
+#hero {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.glow-text {
+    font-size: 55px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 10px #85b0e9;
+}
+
+#hero span {
+    color: #00d9ff;
+}
+
+.subtitle {
+    font-size: 20px;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+.neon-btn {
+    margin-top: 25px;
+    padding: 15px 35px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #00d9ff;
+    border-radius: 8px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px #00d9ff;
+}
+
+.neon-btn:hover {
+    background: #00d9ff;
+    color: #111;
+    box-shadow: 0 0 25px #00d9ff;
+}
+
+/* Sections */
+.section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00d9ff;
+}
+
+/* Project Cards */
+.project-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.project-card {
+    width: 300px;
+    padding: 40px;
+    border-radius: 15px;
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+}
+
+.glow-card {
+    box-shadow: 0 0 20px #00d9ff4a;
+    transition: 0.4s;
+}
+
+.glow-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 70px #7300ffb4;
+}
+
+.project-btn {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #00d9ff;
+    border: 1px solid #00d9ff;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.project-btn:hover {
+    background: #cbabe3;
+    color: #111;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(8px);
+}
+
+/* Scroll Reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.8s ease-in-out;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
