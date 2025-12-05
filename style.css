@@ -14,6 +14,7 @@ body {
     background: linear-gradient(135deg, #0a0f24, #111a3b, #0f0f0f);
     background-size: 300% 300%;
     animation: bgMove 12s infinite alternate;
+
 }
 
 /* Background animation */
@@ -109,11 +110,24 @@ nav ul li a:hover {
     padding: 80px 50px;
     text-align: center;
 }
+.wrapper {
+    max-inline-size: 720px;
+    margin-inline:auto;
+}
 
 .section-title {
     font-size: 36px;
     margin-bottom: 20px;
     text-shadow: 0 0 10px #00d9ff;
+}
+
+.image{
+    margin: 50px;
+    border-color: #46abd6a8;
+    border-radius: 20px;
+    box-shadow:0 0 20px #00d9ff;
+    height:250px;
+    width:fit-content;
 }
 
 /* Project Cards */
@@ -159,22 +173,26 @@ nav ul li a:hover {
     color: #111;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(8px);
-}
-
 /* Scroll Reveal */
 .reveal {
     opacity: 0;
-    transform: translateY(40px);
+    transform: translateY(7 0px);
     transition: 0.8s ease-in-out;
 }
 
 .reveal.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+.git{
+    color:#fff;
+    text-decoration: none;
+}
+
+.git:hover{
+    color:#00d9ff;
+    font-size: 20px;
+    transition: 0.6s ease-in-out;
+    text-shadow: 0 0 90px #5405b5b4;
 }
