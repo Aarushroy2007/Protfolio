@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -16,14 +16,12 @@ body {
     animation: bgMove 12s infinite alternate;
 
 }
-
-/* Background animation */
+
 @keyframes bgMove {
     0% { background-position: 0% 50%; }
     100% { background-position: 100% 50%; }
 }
-
-/* Navbar */
+
 nav {
     width: 100%;
     padding: 20px 50px;
@@ -58,8 +56,7 @@ nav ul li a {
 nav ul li a:hover {
     color: #00d9ff;
 }
-
-/* HERO */
+
 #hero {
     height: 90vh;
     display: flex;
@@ -104,8 +101,7 @@ nav ul li a:hover {
     color: #111;
     box-shadow: 0 0 25px #00d9ff;
 }
-
-/* Sections */
+
 .section {
     padding: 80px 50px;
     text-align: center;
@@ -129,8 +125,7 @@ nav ul li a:hover {
     height:250px;
     width:fit-content;
 }
-
-/* Project Cards */
+
 .project-container {
     display: flex;
     justify-content: center;
@@ -172,8 +167,7 @@ nav ul li a:hover {
     background: #cbabe3;
     color: #111;
 }
-
-/* Scroll Reveal */
+
 .reveal {
     opacity: 0;
     transform: translateY(7 0px);
